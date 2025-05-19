@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About | Badredine.exe</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      background: radial-gradient(circle at center, #000000 0%, #090010 100%);
+      font-family: 'Orbitron', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      overflow: hidden;
+      perspective: 1000px;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&display=swap');
+
+    .about-float {
+      transform: rotateX(15deg) rotateY(-20deg);
+      text-align: center;
+      transition: transform 1s ease;
+    }
+
+    .about-float:hover {
+      transform: rotateX(0deg) rotateY(0deg) scale(1.05);
+    }
+
+    .about-float h1 {
+      font-size: 4em;
+      color: #0ff;
+      text-shadow: 0 0 20px #0ff, 0 0 40px #f0f;
+      animation: glow 2s infinite alternate;
+    }
+
+    .about-float h2 {
+      font-size: 2.5em;
+      color: #f0f;
+      margin-top: 10px;
+      text-shadow: 0 0 12px #f0f, 0 0 25px #0ff;
+    }
+
+    .about-float p {
+      font-size: 1.2em;
+      line-height: 1.8;
+      margin-top: 25px;
+      max-width: 800px;
+      color: #ccc;
+      text-shadow: 0 0 6px #0ff;
+    }
+
+    @keyframes glow {
+      0% {
+        text-shadow: 0 0 10px #0ff, 0 0 30px #f0f;
+      }
+      100% {
+        text-shadow: 0 0 20px #0ff, 0 0 50px #f0f;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="about-float">
+    <h1>About</h1>
+    <h2>Badredine.exe</h2>
+    <p>
+      I’m a cybersecurity specialist and digital artist fusing hacking with style.
+      I build sleek, animated, high-tech websites and defend the cyber world using tools like Kali Linux, Burp Suite, and more.
+      My goal: pure cyber aesthetics + elite skills.
+    </p>
+  </div>
+</body>
+</html>
