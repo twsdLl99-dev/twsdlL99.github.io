@@ -14,23 +14,29 @@ body {
   position: relative;
 }
 
+
+/* Full-page background image */
 .code-background {
-  position: absolute;
-  top: 0; left: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url("code-background.jpg");
+  background-image: url('cc.png'); /* Replace with your image name */
   background-size: cover;
   background-position: center;
-  filter: blur(6px) brightness(0.45);
+  background-repeat: no-repeat;
   z-index: -1;
-  animation: moveBG 40s linear infinite;
+  filter: blur(6px) brightness(0.4); /* Optional: makes content easier to read */
+  animation: moveBG 40s linear infinite; /* Optional movement */
 }
 
+/* Optional background animation */
 @keyframes moveBG {
   0% { background-position: 0% 50%; }
   100% { background-position: 100% 50%; }
 }
+
 
 .glow-text {
   text-align: center;
@@ -219,23 +225,17 @@ body {
   overflow: hidden;
 }
 
-/* Background Image Styling */
-.code-background {
-  position: fixed;       /* fixed so it stays while scrolling */
-  top: 0; 
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-image: url('your-background.jpg'); /* Replace with your image path */
-  background-size: cover;
-  background-position: center;
-  filter: blur(6px) brightness(0.45); /* optional, keeps text readable */
-  z-index: -1;            /* behind everything */
-  animation: moveBG 40s linear infinite; /* optional animation */
+.card {
+  width: 300px;
+  height: 400px;
+  background: #111;
+  border-radius: 20px;
+  box-shadow: 0 0 30px #0ff;
+  color: #0ff;
+  transition: transform 0.3s ease;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  margin: 40px auto;
+  padding: 20px;
 }
 
-/* Existing animation */
-@keyframes moveBG {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 100% 50%; }
-}
